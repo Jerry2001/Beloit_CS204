@@ -6,10 +6,10 @@ public class LinkedList {
 	int sizeOfList;
 	
 	void insertAtFrontofList(int val) {
-		Node theNewItem = new Node(val, headOfList);//value, where to put it 
+		Node theNewItem = new Node(val, headOfList);
 		if(val == sizeOfList) tail = theNewItem;
 		
-		headOfList = theNewItem;//we now actually move our pointer to read this correctly
+		headOfList = theNewItem;
 		if(val == 1) tail.setNext(theNewItem);
 	} 
 	

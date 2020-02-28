@@ -26,8 +26,7 @@ public class Node {
 	
 	public Node (int newContents ) {
 		contents =  newContents;
-		next=null;//null if you run out of things, at the end of the list
-				  // sometimes people will put in something at the end of the list so we can get around nulls floating about 
+		next=null;
 	}
 
 	public Node( int newContents, Node nextNode) {
