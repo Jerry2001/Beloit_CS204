@@ -34,7 +34,10 @@ public class LinkedList {
 		if(val == sizeOfList) tail = theNewItem;
 		
 		headOfList = theNewItem;
-		if(val == 1) tail.setNext(theNewItem);
+		if(val == 1) {
+			preHead = tail;
+			tail.setNext(theNewItem);
+		}
 	} 
 	
 	/**
