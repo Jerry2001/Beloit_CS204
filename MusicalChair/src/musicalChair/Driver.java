@@ -20,12 +20,12 @@ public class Driver {
 		int k = scnr.nextInt();
 		
 		LinkedList game = new LinkedList();
-		game.sizeOfList = numberOfPlayer;
+		game.setSize(numberOfPlayer);
 		for(int i = numberOfPlayer; i > 0; --i) {
 			game.insertAtFrontofList(i);
 		}
 		
-		while(game.sizeOfList != 1) {
+		while(game.getSize() != 1) {
 			for(int i = 0; i < k - 1; ++i) game.goToNextElement();
 			game.removeElement();
 		}
